@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result</title>
+</head>
+<body>
+    <h1>Student Result Program</h1>
+    <script>
+        var subject=prompt("Enter the number of subjects");
+        var total=0;
+        for(var i=1;i<=subject;i++){
+            var marks=prompt("Enter marks of subject"+ i);
+            total+=Number(marks);
+        }
+        var average=total/subject;
+        var grade;
+        var result;
+        if(average>=60){
+            grade="A";
+            result="Pass";
+        }
+        else if(average>=50){
+            grade="B";
+            result="Pass";
+        }
+        else if(average>=40){
+            grade="C";
+            result="Pass";
+        }
+        else{
+            grade="D";
+            result="Fail";
+        }
+        document.write("Total Marks = " + total);
+        document.write("<br>");
+        document.write("Average Marks = " + average);
+        document.write("<br>");
+        document.write("Grade= " + grade);
+        document.write("<br>");
+        document.write("Result = " + result);
+        
+    </script>
+</body>
+</html>
